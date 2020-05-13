@@ -107,5 +107,3 @@ public class GT4500Test {
 
 }
 
-
-}
