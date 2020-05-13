@@ -94,4 +94,18 @@ public class GT4500Test {
     verify(mock1, times(0)).fire(1);
     verify(mock2, times(0)).fire(1);
 }
+@Test
+  public void fireLazer_All_Success(){
+    when(mock1.isEmpty()).thenReturn(false);
+    when(mock2.isEmpty()).thenReturn(false);
+    boolean result = ship.fireLaser(FiringMode.ALL);
+    assertEquals(false, result);
+    verify(mock2, times(0)).fire(1);
+    verify(mock2, times(0)).fire(1);
+  }
+
+
+}
+
+
 }
